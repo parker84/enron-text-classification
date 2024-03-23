@@ -26,7 +26,7 @@ def get_cluster_summary(texts_in_cluster: list):
     2. Pull out the 3-5 main themes that are common for every ticket in this cluster and list them as 'tags' for this cluster.
     3. Give me an (extremely brief) summary of the common themes (present in every ticket) in this cluster.
 
-    Here's the details from the first support ticket in the cluster:
+    Here's the details from the first email in the cluster:
     """
     user_prompt = "\n\n------------------Next ticket in the cluster:\n".join(texts_in_cluster)
     response = client.chat.completions.create(
